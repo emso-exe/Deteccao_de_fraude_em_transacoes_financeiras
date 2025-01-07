@@ -16,7 +16,30 @@ O objetivo é desenvolver um modelo preditivo de alta precisão, capaz de identi
 Os dados utilizados neste projeto estão disponíveis no Kaggle ([Financial Transactions Dataset: Analytics](https://www.kaggle.com/datasets/computingvictor/transactions-fraud-datasets)) e incluem **arquivos CSV** e **arquivos JSON** contendo registros detalhados de transações financeiras, informações relacionadas aos clientes, dados complementares sobre os cartões utilizados e outros aspectos relevantes.
 Esses dados oferecem um panorama rico para a análise exploratória e a modelagem preditiva.
 
-## 📓 Dicionário de dados
+### Componentes do Conjunto de Dados
+
+1. **Dados de Transações (transactions_data.csv)**
+   - Registros detalhados de transações, incluindo valores, datas e detalhes dos comerciantes.
+   - Abrange transações ao longo da década de 2010.
+   - Contém tipos de transações, valores e informações sobre os comerciantes.
+
+2. **Informações de Cartões (cards_data.csv)**
+   - Detalhes de cartões de crédito e débito.
+   - Inclui limites dos cartões, tipos e datas de ativação.
+
+3. **Códigos de Categoria de Comerciantes (mcc_codes.json)**
+   - Códigos padrão de classificação para tipos de negócios.
+   - Códigos MCC (Merchant Category Codes) com descrições baseadas em padrões da indústria.
+
+4. **Rótulos de Fraude (train_fraud_labels.json)**
+   - Rótulos binários para classificação de transações.
+   - Indica se uma transação é fraudulenta ou legítima.
+
+5. **Dados de Usuários (users_data.csv)**
+   - Informações demográficas sobre os clientes.
+   - Detalhes relacionados às contas.
+
+> fonte: [Financial Transactions Dataset: Analytics](https://www.kaggle.com/datasets/computingvictor/transactions-fraud-datasets)
 
 ## 💻 Tecnologias
 
