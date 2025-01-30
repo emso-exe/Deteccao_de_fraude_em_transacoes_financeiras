@@ -39,6 +39,73 @@ Esses dados oferecem um panorama rico para a análise exploratória e a modelage
    - Informações demográficas sobre os clientes.
    - Detalhes relacionados às contas.
 
+### Dicionário de dados
+
+Com base no entendimento dos dados foi elaborado este dicionário.
+
+1. **Dados de Transações (transactions_data.csv)**
+| Nome da Coluna    | Tipo     | Descrição |
+|-------------------|---------|-----------|
+| `id`             | Int     | Identificador único da transação. |
+| `date`           | String  | Data e hora da transação (AAAA-MM-DD HH:MM:SS). |
+| `client_id`      | Int     | Identificador do cliente que realizou a transação. |
+| `card_id`        | Int     | Identificador do cartão utilizado na transação. |
+| `amount`         | String  | Valor da transação (em formato monetário). |
+| `use_chip`       | String  | Tipo de transação (Swipe Transaction, Online Transaction e Chip Transaction). |
+| `merchant_id`    | Int     | Identificador do comerciante. |
+| `merchant_city`  | String  | Cidade do comerciante. |
+| `merchant_state` | String  | Estado do comerciante (pode ser `NULL` para transações online). |
+| `zip`            | Float   | Código postal do comerciante (pode ser `NULL` para transações online). |
+| `mcc`            | Int     | Código da categoria do comerciante (Merchant Category Code). |
+| `errors`         | String  | Erros na transação (`NULL` se não houver erro). |
+
+2. **Informações de Cartões (cards_data.csv)**
+| Nome da Coluna          | Tipo       | Descrição |
+|-------------------------|-----------|-----------|
+| `id`                   | Int       | Identificador único do cartão. |
+| `client_id`            | Int       | Identificador do cliente associado ao cartão. |
+| `card_brand`           | String    | Bandeira do cartão (Visa, Mastercard, Discover e Amex). |
+| `card_type`            | String    | Tipo de cartão (Credit, Debit e Debit (Prepaid)). |
+| `card_number`          | String    | Número do cartão (possivelmente mascarado). |
+| `expires`              | String    | Data de expiração do cartão (MM/AAAA). |
+| `cvv`                  | Int       | Código de verificação do cartão. |
+| `has_chip`             | String    | Indica se o cartão possui chip (YES/NO). |
+| `num_cards_issued`     | Int       | Número total de cartões emitidos para o cliente. |
+| `credit_limit`         | String    | Limite de crédito do cartão (em formato monetário). |
+| `acct_open_date`       | String    | Data de abertura da conta do cartão (MM/AAAA). |
+| `year_pin_last_changed`| Int       | Ano da última alteração do PIN. |
+| `card_on_dark_web`     | String    | Indica se o cartão foi encontrado na dark web (Yes/No). |
+
+3. **Códigos de Categoria de Comerciantes (mcc_codes.json)**
+| Nome da Coluna  | Tipo    | Descrição |
+|-----------------|--------|-----------|
+| `code`         | Int    | Código de categoria do comerciante (MCC - Merchant Category Code). |
+| `description`  | String | Descrição da categoria do comerciante. |
+
+4. **Rótulos de Fraude (train_fraud_labels.json)**
+| Nome da Coluna     | Tipo    | Descrição |
+|--------------------|--------|-----------|
+| `transaction_id`  | Int    | Identificador único da transação. |
+| `is_fraud`        | String | Indica se a transação foi fraudulenta (Yes/No). |
+
+5. **Dados de Usuários (users_data.csv)**
+| Nome da Coluna         | Tipo       | Descrição |
+|------------------------|-----------|-----------|
+| `id`                  | Int       | Identificador único do cliente. |
+| `current_age`         | Int       | Idade atual do cliente. |
+| `retirement_age`      | Int       | Idade esperada para aposentadoria. |
+| `birth_year`          | Int       | Ano de nascimento do cliente. |
+| `birth_month`         | Int       | Mês de nascimento do cliente. |
+| `gender`              | String    | Gênero do cliente (Male/Female). |
+| `address`             | String    | Endereço residencial do cliente. |
+| `latitude`            | Float     | Latitude do endereço do cliente. |
+| `longitude`           | Float     | Longitude do endereço do cliente. |
+| `per_capita_income`   | String    | Renda per capita do cliente (em formato monetário). |
+| `yearly_income`       | String    | Renda anual do cliente (em formato monetário). |
+| `total_debt`          | String    | Dívida total do cliente (em formato monetário). |
+| `credit_score`        | Int       | Pontuação de crédito do cliente. |
+| `num_credit_cards`    | Int       | Número de cartões de crédito ativos do cliente. |
+
 > fonte: [Financial Transactions Dataset: Analytics](https://www.kaggle.com/datasets/computingvictor/transactions-fraud-datasets)
 
 ## 💻 Tecnologias
