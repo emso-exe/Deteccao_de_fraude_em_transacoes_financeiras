@@ -44,6 +44,7 @@ Esses dados oferecem um panorama rico para a análise exploratória e a modelage
 Com base no entendimento dos dados foi elaborado este dicionário.
 
 1. **Dados de Transações (transactions_data.csv)**
+
 | Nome da Coluna    | Tipo     | Descrição |
 |-------------------|---------|-----------|
 | `id`             | Int     | Identificador único da transação. |
