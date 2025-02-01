@@ -61,6 +61,7 @@ Com base no entendimento dos dados foi elaborado este dicionário.
 | `errors`         | String  | Erros na transação (`NULL` se não houver erro). |
 
 2. **Informações de Cartões (cards_data.csv)**
+
 | Nome da Coluna          | Tipo       | Descrição |
 |-------------------------|-----------|-----------|
 | `id`                   | Int       | Identificador único do cartão. |
@@ -78,18 +79,21 @@ Com base no entendimento dos dados foi elaborado este dicionário.
 | `card_on_dark_web`     | String    | Indica se o cartão foi encontrado na dark web (Yes/No). |
 
 3. **Códigos de Categoria de Comerciantes (mcc_codes.json)**
+
 | Nome da Coluna  | Tipo    | Descrição |
 |-----------------|--------|-----------|
 | `code`         | Int    | Código de categoria do comerciante (MCC - Merchant Category Code). |
 | `description`  | String | Descrição da categoria do comerciante. |
 
 4. **Rótulos de Fraude (train_fraud_labels.json)**
+
 | Nome da Coluna     | Tipo    | Descrição |
 |--------------------|--------|-----------|
 | `transaction_id`  | Int    | Identificador único da transação. |
 | `is_fraud`        | String | Indica se a transação foi fraudulenta (Yes/No). |
 
 5. **Dados de Usuários (users_data.csv)**
+
 | Nome da Coluna         | Tipo       | Descrição |
 |------------------------|-----------|-----------|
 | `id`                  | Int       | Identificador único do cliente. |
