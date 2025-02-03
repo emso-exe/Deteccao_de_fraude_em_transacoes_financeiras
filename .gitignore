@@ -1,14 +1,72 @@
+# Diretórios e arquivos do Jupyter Notebook
 .ipynb_checkpoints/
+
+# Diretórios virtuais do Python
 .venv/
-.git/
 venv/
+
+# Diretório do Git
+.git/
+
+# Diretórios temporários e caches
 spark-warehouse/
 _temp/
-*.pdf
-*.txt
-*.html
-*.json
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Arquivos de configuração e credenciais sensíveis (cuidado ao compartilhar)
+.env
+*.key
+*.pem
+*.crt
+*.cfg
+*.ini
+secrets.toml
+
+# Arquivos de logs
+logs/
+*.log
+nohup.out
+
+# Arquivos de dados
 *.csv
-*.xls
+*.tsv
+*.json
 *.xlsx
+*.xls
+*.parquet
+*.feather
+*.h5
+*.db
+*.sqlite
+*.pkl
+*.sav
+
+# Arquivos de relatórios e exportações
+*.pdf
+*.html
+*.docx
+*.pptx
+
+# Arquivos do Power BI
+*.pbix
+
+# Arquivos do TensorFlow e PyTorch
+checkpoint/
+*.ckpt
+*.hdf5
+*.pth
+*.pt
+
+# Modelos treinados
+*.joblib
+*.pkl
+
+# Arquivos desnecessários do Jupyter
+*.nbconvert.ipynb
+*.pyc
+
+# Exceção: Manter o requirements.txt
 !requirements.txt
