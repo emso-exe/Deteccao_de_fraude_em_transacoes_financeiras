@@ -8,6 +8,7 @@ _temp/
 *.pdf
 *.txt
 *.html
+*.json
 *.csv
 *.xls
 *.xlsx
