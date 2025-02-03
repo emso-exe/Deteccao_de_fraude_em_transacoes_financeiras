@@ -1,4 +1,8 @@
 .ipynb_checkpoints
+.venv
+.git
+venv
+spark-warehouse
 _temp
 *.pdf
 *.txt
