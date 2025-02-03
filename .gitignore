@@ -1,6 +1,7 @@
 .ipynb_checkpoints/
 .venv/
 .git/
+dados/
 venv/
 spark-warehouse/
 _temp/
