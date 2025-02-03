@@ -1,9 +1,9 @@
-.ipynb_checkpoints
-.venv
-.git
-venv
-spark-warehouse
-_temp
+.ipynb_checkpoints/
+.venv/
+.git/
+venv/
+spark-warehouse/
+_temp/
 *.pdf
 *.txt
 *.html
