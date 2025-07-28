@@ -41,7 +41,6 @@ nohup.out
 *.h5
 *.db
 *.sqlite
-*.pkl
 *.sav
 
 # Arquivos de relatórios e exportações
