@@ -42,6 +42,7 @@ nohup.out
 *.db
 *.sqlite
 *.sav
+*.crc
 
 # Arquivos de relatórios e exportações
 *.pdf
