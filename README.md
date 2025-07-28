@@ -115,6 +115,23 @@ Com base no entendimento dos dados foi elaborado este dicionário.
 
 ## 💻 Tecnologias
 
+* Python
+   - Biblioteca GC
+   - Biblioteca Pandas
+   - Biblioteca Matplotlib
+   - Biblioteca Seaborn
+   - Biblioteca Numpy
+   - Biblioteca Warnings
+   - Biblioteca Time
+   - Biblioteca Path
+   - Biblioteca SciPy
+   - Biblioteca Optuna
+   - Biblioteca JobLib
+   - Biblioteca LightGBM
+   - Biblioteca XGBoost
+   - Biblioteca SciKit-learn
+   - Biblioteca Category Encoders
+
 ## 💳 Créditos
 
 - [Estênio Mariano](https://github.com/emso-exe)
